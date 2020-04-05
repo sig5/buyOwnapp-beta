@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppThemewhitestatus" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary2</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+<!--    <style name="SearchView" parent="AppTheme2">-->
+<!--        <item name="floatingSearch_backgroundColor">#ffffff</item>-->
+<!--        <item name="floatingSearch_viewSearchInputTextColor"></item>-->
+<!--        <item name="floatingSearch_viewSuggestionItemTextColor"></item>-->
+<!--        <item name="floatingSearch_hintTextColor"></item>-->
+<!--        <item name="floatingSearch_dividerColor"></item>-->
+<!--        <item name="floatingSearch_clearBtnColor"></item>-->
+<!--        <item name="floatingSearch_leftActionColor"></item>-->
+<!--        <item name="floatingSearch_menuItemIconColor"></item>-->
+<!--        <item name="floatingSearch_suggestionRightIconColor"></item>-->
+<!--        <item name="floatingSearch_actionMenuOverflowColor"></item>-->
+<!--    </style>-->
+</resources>

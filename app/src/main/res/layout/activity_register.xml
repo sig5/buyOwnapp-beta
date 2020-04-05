@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient2"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <ImageView
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/u"
+            android:drawablePadding="12sp"
+            android:hint="Username"
+            android:padding="5dp"
+            android:textAlignment="inherit"
+            tools:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/k"
+            android:drawablePadding="12sp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textAlignment="inherit" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Register"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#7358DF"
+            android:textStyle="bold"
+            android:id="@+id/Register"
+            />
+
+        <ImageView
+            android:id="@+id/gotologin"
+            android:layout_width="wrap_content"
+            android:layout_height="249dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/login1" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
