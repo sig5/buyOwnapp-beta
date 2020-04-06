@@ -10,5 +10,5 @@ public class MyData {
     static ArrayList<String> image =new ArrayList<String>();
     static int p=0;
 
-
+int c;
 }
