@@ -14,7 +14,7 @@ public class Datamodel {
         this.authorname=authorname;
         this.description=description;
     }
-//    TESTINGasd
+//    TESTING
     public String getName1() {
         return name;
     }
