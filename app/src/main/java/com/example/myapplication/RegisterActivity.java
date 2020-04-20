@@ -20,20 +20,35 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class RegisterActivity extends AppCompatActivity {
+    //created firebase object
     private FirebaseAuth mAuth;
+
     EditText username;
     EditText password;
+    EditText full_name;
+    EditText contact;
+
     ImageView login;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_register);
+
+        //resource part
         Button b1=findViewById(R.id.Register);
         login=findViewById(R.id.gotologin);
         username=findViewById(R.id.username);
         password=findViewById(R.id.password);
+        full_name=findViewById(R.id.fullname);
+        contact=findViewById(R.id.phone);
+
+        //initialising the instance
+
         mAuth = FirebaseAuth.getInstance();
+        //button action defined
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Password too short",Toast.LENGTH_SHORT).show();
             }
         });
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,9 +68,11 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-
+//function to make account validate the details
      private void createnewac(String email,String password)
      {
+         //FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
+//creating a user account through authorization object
      mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
          @Override
          public void onComplete(@NonNull Task<AuthResult> task) {

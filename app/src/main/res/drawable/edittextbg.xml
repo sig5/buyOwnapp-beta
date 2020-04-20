@@ -6,6 +6,14 @@
         <solid android:color="@android:color/white">
 
         </solid>
+        <stroke>
+            <gradient
+                android:angle="-45"
+                android:startColor="#764ba2"
+                android:endColor="#667eea"
+                android:type="linear"
+                />
+        </stroke>
     </shape>
 </item>
 </selector>

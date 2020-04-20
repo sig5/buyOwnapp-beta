@@ -20,11 +20,29 @@
             android:src="@drawable/logo" />
 
         <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/k"
+            android:drawablePadding="12sp"
+            android:hint="Full Name"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textAlignment="inherit" />
+
+        <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edittextbg"
             android:drawableLeft="@drawable/u"
             android:drawablePadding="12sp"
@@ -48,6 +66,26 @@
             android:inputType="textPassword"
             android:padding="5dp"
             android:textAlignment="inherit" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@drawable/k"
+            android:drawablePadding="12sp"
+            android:hint="Contact Number"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textAlignment="inherit" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            ></Button>
 
         <Button
             android:layout_width="wrap_content"
@@ -62,12 +100,14 @@
             android:id="@+id/Register"
             />
 
+
         <ImageView
             android:id="@+id/gotologin"
             android:layout_width="wrap_content"
             android:layout_height="249dp"
             android:layout_marginTop="80dp"
-            android:src="@drawable/login1" />
+            android:src="@drawable/login1"
+            android:visibility="gone" />
 
     </LinearLayout>
 
