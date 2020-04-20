@@ -24,13 +24,13 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
     //created firebase object
-    private FirebaseAuth mAuth;
+     FirebaseAuth mAuth;
 
     EditText username;
     EditText password;
     EditText full_name;
     EditText contact;
-
+    public UserProfileChangeRequest profileChangeRequest;
     ImageView login;
 
 
@@ -39,6 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_register);
+        mAuth=FirebaseAuth.getInstance();
 
         //resource part
         Button b1=findViewById(R.id.Register);
@@ -56,6 +57,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
+
                 if(password.length()>8)
                     createnewac(username.getText().toString(),password.getText().toString());
                 else
@@ -66,6 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(new Intent(getApplicationContext(),Loginpage.class));
                 finish();
             }
@@ -83,8 +86,10 @@ public class RegisterActivity extends AppCompatActivity {
              if(task.isSuccessful())
              {mAuth.signInWithEmailAndPassword(email,password);
              FirebaseUser user=mAuth.getInstance().getCurrentUser();
-                 UserProfileChangeRequest profileChangeRequest=new UserProfileChangeRequest().Builder().se;
-
+                 UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                         .setDisplayName(full_name.getText().toString()+"*"+contact.getText().toString())
+                         .build();
+                 user.updateProfile(profileUpdates);
                  startActivity(new Intent(getApplicationContext(),Listview.class));
              finish();
              }

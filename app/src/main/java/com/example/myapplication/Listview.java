@@ -63,6 +63,11 @@ public class Listview extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(),Loginpage.class));
             finish();
         }
+        if(menuItem.getItemId()==R.id.edit_profile)
+        {
+            startActivity(new Intent(getApplicationContext(),MyProfile.class));
+
+        }
         return false;
     }
 });
