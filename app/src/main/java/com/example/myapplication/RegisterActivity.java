@@ -18,6 +18,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
     //created firebase object
@@ -47,11 +50,12 @@ public class RegisterActivity extends AppCompatActivity {
 
         //initialising the instance
 
-        mAuth = FirebaseAuth.getInstance();
         //button action defined
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 if(password.length()>8)
                     createnewac(username.getText().toString(),password.getText().toString());
                 else
@@ -69,15 +73,19 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
 //function to make account validate the details
-     private void createnewac(String email,String password)
+     private void createnewac(final String email, final String password)
      {
-         //FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
-//creating a user account through authorization object
+
+
      mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
          @Override
          public void onComplete(@NonNull Task<AuthResult> task) {
              if(task.isSuccessful())
-             { startActivity(new Intent(getApplicationContext(),Listview.class));
+             {mAuth.signInWithEmailAndPassword(email,password);
+             FirebaseUser user=mAuth.getInstance().getCurrentUser();
+                 UserProfileChangeRequest profileChangeRequest=new UserProfileChangeRequest().Builder().se;
+
+                 startActivity(new Intent(getApplicationContext(),Listview.class));
              finish();
              }
          }
