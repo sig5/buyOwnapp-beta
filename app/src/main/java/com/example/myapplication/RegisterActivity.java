@@ -44,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
         //resource part
         Button b1=findViewById(R.id.Register);
         login=findViewById(R.id.gotologin);
-        username=findViewById(R.id.username);
+        username=findViewById(R.id.email);
         password=findViewById(R.id.password);
         full_name=findViewById(R.id.fullname);
         contact=findViewById(R.id.phone);
