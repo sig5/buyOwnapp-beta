@@ -4,4 +4,5 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="registertext">Already have an account?\n  <u>Log In</u></string>
 </resources>

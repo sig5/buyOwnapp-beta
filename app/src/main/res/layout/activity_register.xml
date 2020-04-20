@@ -19,88 +19,114 @@
             android:layout_marginBottom="20dp"
             android:src="@drawable/logo" />
 
-        <EditText
+        <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/fullname"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/edittextbg"
-            android:drawableLeft="@drawable/k"
-            android:drawablePadding="12sp"
             android:hint="Full Name"
-            android:inputType="number"
-            android:padding="5dp"
+            app:met_baseColor="#ffffff"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelText="Full Name"
+            app:met_primaryColor="#ffffff"
+            app:met_iconLeft="@drawable/fullname_black"
+            android:inputType="text"
+            android:background="#ffffff"
             android:textAlignment="inherit" />
 
-        <EditText
-            android:id="@+id/username"
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:layout_height="40dp"
+            android:hint="Email"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/edittextbg"
-            android:drawableLeft="@drawable/u"
-            android:drawablePadding="12sp"
-            android:hint="Username"
-            android:padding="5dp"
+            app:met_baseColor="#ffffff"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelText="Full Name"
+            app:met_primaryColor="#ffffff"
+            app:met_iconLeft="@drawable/email"
             android:textAlignment="inherit"
+            android:inputType="textEmailAddress"
             tools:layout_marginTop="20dp" />
 
-        <EditText
+        <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/password"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:layout_height="40dp"
+            android:hint="Password"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="25dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/edittextbg"
-            android:drawableLeft="@drawable/k"
-            android:drawablePadding="12sp"
-            android:hint="Password"
+            app:met_baseColor="#ffffff"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelText="Full Name"
+            app:met_primaryColor="#ffffff"
+            app:met_iconLeft="@drawable/password"
             android:inputType="textPassword"
-            android:padding="5dp"
             android:textAlignment="inherit" />
-        <EditText
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/phone"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:hint="Phone no."
+            android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="25dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/edittextbg"
-            android:drawableLeft="@drawable/k"
-            android:drawablePadding="12sp"
-            android:hint="Contact Number"
+            app:met_baseColor="#ffffff"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelText="Full Name"
+            app:met_primaryColor="#ffffff"
+            app:met_iconLeft="@drawable/phone"
             android:inputType="number"
-            android:padding="5dp"
             android:textAlignment="inherit" />
-        <Button
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Country"
-            ></Button>
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle=""
+                android:text="@string/registertext"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="#ffffff"
+
+                />
 
         <Button
+            android:id="@+id/Register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/button_bg"
-            android:padding="10dp"
-            android:text="Register"
+            android:drawableEnd="@drawable/next"
+            android:padding="12dp"
+            android:text="Register   "
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#7358DF"
+            android:textColor="#000000"
             android:textStyle="bold"
-            android:id="@+id/Register"
+            android:layout_alignParentRight="true"
             />
 
-
+        </RelativeLayout>
         <ImageView
             android:id="@+id/gotologin"
             android:layout_width="wrap_content"
