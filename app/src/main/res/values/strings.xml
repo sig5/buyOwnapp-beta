@@ -5,4 +5,5 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_register">RegisterActivity</string>
     <string name="registertext">Already have an account?\n  <u>Log In</u></string>
+    <string name="logintext">Don\'t have an account?\n  <u>Register</u></string>
 </resources>
