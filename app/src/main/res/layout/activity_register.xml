@@ -13,119 +13,142 @@
         android:gravity="center|top">
 
         <ImageView
-            android:layout_width="80pt"
-            android:layout_height="80pt"
-            android:layout_marginTop="40dp"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:src="@drawable/logo" />
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/fullname"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"
-            android:hint="Full Name"
-            app:met_baseColor="#ffffff"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelAnimating="true"
-            app:met_floatingLabelText="Full Name"
-            app:met_primaryColor="#ffffff"
-            app:met_iconLeft="@drawable/fullname_black"
-            android:inputType="text"
-            android:background="#ffffff"
-            android:textAlignment="inherit" />
-
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:hint="Email"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"
-            app:met_baseColor="#ffffff"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelAnimating="true"
-            app:met_floatingLabelText="Full Name"
-            app:met_primaryColor="#ffffff"
-            app:met_iconLeft="@drawable/email"
-            android:textAlignment="inherit"
-            android:inputType="textEmailAddress"
-            />
-
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:hint="Password"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="15dp"
-            app:met_baseColor="#ffffff"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelAnimating="true"
-            app:met_floatingLabelText="Full Name"
-            app:met_primaryColor="#ffffff"
-            app:met_iconLeft="@drawable/password"
-            android:inputType="textPassword"
-            android:textAlignment="inherit" />
-
-
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/phone"
-            android:layout_width="match_parent"
-            android:hint="Phone no."
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="15dp"
-            app:met_baseColor="#ffffff"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelAnimating="true"
-            app:met_floatingLabelText="Full Name"
-            app:met_primaryColor="#ffffff"
-            app:met_iconLeft="@drawable/phone"
-            android:inputType="number"
-            android:textAlignment="inherit" />
-        <RelativeLayout
+        <android.support.design.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="15dp"
             >
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|top">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Register"
+                    android:fontFamily="@font/mm"
+                    android:textColor="#000000"
+                    android:layout_marginTop="20dp"
+                    android:textSize="24dp"
+                    />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="#000000"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:textAlignment="inherit"
+                app:met_baseColor="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="Full Name"
+                app:met_iconLeft="@drawable/fullname"
+                app:met_primaryColor="#000000" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textAlignment="inherit"
+                app:met_baseColor="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="Full Name"
+                app:met_iconLeft="@drawable/email"
+                app:met_primaryColor="#000000" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="inherit"
+                app:met_baseColor="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="Full Name"
+                app:met_iconLeft="@drawable/password"
+                app:met_primaryColor="#000000" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Phone no."
+                android:inputType="number"
+                android:textAlignment="inherit"
+                app:met_baseColor="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="Full Name"
+                app:met_iconLeft="@drawable/phone"
+                app:met_primaryColor="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="mm"
-                android:text="@string/registertext"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/mm"
-                android:layout_alignParentLeft="true"
-                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
 
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="12dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/mm"
+                    android:text="@string/registertext"
+                    android:textSize="12dp"
+                    android:textColor="#000000" />
 
-        <Button
-            android:id="@+id/Register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/button_bg"
-            android:drawableEnd="@drawable/next"
-            android:padding="12dp"
-            android:text="Register   "
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:fontFamily="mm"
-            android:layout_alignParentRight="true"
-            />
+                <Button
+                    android:id="@+id/Register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_bg_red"
+                    android:drawableEnd="@drawable/next_white"
+                    android:fontFamily="@font/mm"
+                    android:padding="12dp"
+                    android:text="Register   "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
 
-        </RelativeLayout>
+            </RelativeLayout>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
         <ImageView
             android:id="@+id/gotologin"
             android:layout_width="wrap_content"
