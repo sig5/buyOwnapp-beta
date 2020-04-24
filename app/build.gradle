@@ -32,6 +32,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.0.4'
     implementation 'com.google.firebase:firebase-auth:16.0.5'
     testImplementation 'junit:junit:4.12'
+    implementation 'com.pnikosis:materialish-progress:1.7'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     // RecyclerView
@@ -43,6 +44,7 @@ dependencies {
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
     // Glide
     implementation 'com.github.bumptech.glide:glide:3.7.0'
+
     implementation files('libs/CircleImageView-master/gradle/wrapper/gradle-wrapper.jar')
     // implementation 'com.hbb20:ccp:2.3.8'
     //persistent search

@@ -23,19 +23,14 @@
             android:theme="@style/AppTheme2" />
         <activity
             android:name=".Details"
-            android:theme="@style/AppThemewhitestatus" />
+            android:theme="@style/AppThemewhitestatus"> </activity>
         <activity
             android:name=".Itemdetails"
-            android:theme="@style/AppThemewhitestatus" />
+            android:theme="@style/AppThemewhitestatus">   ></activity>
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".RegisterActivity"
@@ -43,7 +38,12 @@
             android:theme="@style/AppTheme2"></activity>
         <activity
             android:name=".Loginpage"
-            android:theme="@style/AppTheme2"></activity>
+            android:theme="@style/AppTheme2"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
         <activity
             android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"

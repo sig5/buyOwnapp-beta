@@ -129,6 +129,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/sellerbutton"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                 android:layout_width="match_parent"
                 android:layout_height="80sp"

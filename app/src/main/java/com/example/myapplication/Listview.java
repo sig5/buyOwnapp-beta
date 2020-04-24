@@ -71,7 +71,7 @@ public class Listview extends AppCompatActivity {
         return false;
     }
 });
-        ProgressBar progressbar=findViewById(R.id.progressBar);
+        ProgressBar progressbar=findViewById(R.id.progress);
         // setting up dropdown menu for the gridlayout activity
         FloatingActionButton floatingActionButton=findViewById(R.id.floatingActionButton);
 
@@ -204,7 +204,7 @@ class jsonfetch extends AsyncTask<Void,Void,String>
             MyData.image.add(obj.getString("front"));
             MyData.description.add((obj.getString("description")));
             MyData.authorname.add((obj.getString("authorname")));
-
+            MyData.address.add((obj.getString("address")));
         }
         } catch (JSONException e) {
             e.printStackTrace();

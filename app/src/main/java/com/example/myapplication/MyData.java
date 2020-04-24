@@ -3,6 +3,7 @@ package com.example.myapplication;
 import java.util.ArrayList;
 
 public class MyData {
+    static   ArrayList<String> address=new ArrayList<>();
     static ArrayList<String> name =new ArrayList<String>();
     static ArrayList<String> price = new ArrayList<String>();
     static ArrayList<String> description = new ArrayList<String>();

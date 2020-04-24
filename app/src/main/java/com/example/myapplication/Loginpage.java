@@ -51,14 +51,15 @@ public class Loginpage extends AppCompatActivity {
         });
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { signin.setText("Signing in  ");
                 signin.setClickable(false);
                 System.out.println(username.getText().toString());
                 mAuth.signInWithEmailAndPassword(username.getText().toString(),password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful())
-                        { Toast.makeText(getApplicationContext(),"hehe",Toast.LENGTH_SHORT);
+                        {
+                            // Toast.makeText(getApplicationContext(),"hehe",Toast.LENGTH_SHORT);
                             startActivity(new Intent(getApplicationContext(),Listview.class));
                             finish();
                         }
