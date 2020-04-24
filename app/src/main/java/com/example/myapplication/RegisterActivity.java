@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -26,7 +27,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText full_name;
     EditText contact;
     public UserProfileChangeRequest profileChangeRequest;
-    ImageView login;
+  TextView login;
 
 
     @Override
@@ -38,7 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         //resource part
         Button b1=findViewById(R.id.signin);
-        login=findViewById(R.id.gotologin);
+        login=findViewById(R.id.tologin);
         username=findViewById(R.id.email);
         password=findViewById(R.id.password);
         full_name=findViewById(R.id.fullname);
