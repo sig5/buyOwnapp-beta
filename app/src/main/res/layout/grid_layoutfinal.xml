@@ -61,15 +61,15 @@
         </android.support.v7.widget.RecyclerView>
 
         <EditText
-            android:id="@+id/searchbar"
+            android:000000id="@+id/searchbar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_marginTop="27dp"
             android:background="@drawable/edittextbg2"
-            android:drawableLeft="@android:drawable/ic_menu_search"
-            android:drawablePadding="2sp"
-            android:hint="search"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="4sp"
+            android:hint="Search"
             android:padding="8sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

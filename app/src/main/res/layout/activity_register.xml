@@ -60,7 +60,7 @@
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Full Name"
                     app:met_iconLeft="@drawable/fullname"
-                    app:met_primaryColor="#000000" />
+                    app:met_primaryColor="#764ba2" />
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/email"
@@ -77,7 +77,7 @@
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Full Name"
                     app:met_iconLeft="@drawable/email"
-                    app:met_primaryColor="#000000" />
+                    app:met_primaryColor="#764ba2" />
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/password"
@@ -94,7 +94,7 @@
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Full Name"
                     app:met_iconLeft="@drawable/password"
-                    app:met_primaryColor="#000000" />
+                    app:met_primaryColor="#764ba2" />
 
 
                 <com.rengwuxian.materialedittext.MaterialEditText
@@ -112,7 +112,7 @@
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Full Name"
                     app:met_iconLeft="@drawable/phone"
-                    app:met_primaryColor="#000000" />
+                    app:met_primaryColor="#764ba2" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"

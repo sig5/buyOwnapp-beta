@@ -61,7 +61,7 @@
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Full Name"
                     app:met_iconLeft="@drawable/email"
-                    app:met_primaryColor="#000000" />
+                    app:met_primaryColor="#764ba2" />
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/password1"
@@ -78,7 +78,7 @@
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Full Name"
                     app:met_iconLeft="@drawable/password"
-                    app:met_primaryColor="#000000" />
+                    app:met_primaryColor="#764ba2" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -111,7 +111,7 @@
                         android:drawableEnd="@drawable/next_white"
                         android:fontFamily="@font/mm"
                         android:padding="12dp"
-                        android:text="Sign-in   "
+                        android:text="Login   "
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="#ffffff"
                         android:textStyle="bold" />
