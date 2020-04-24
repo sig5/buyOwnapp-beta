@@ -55,7 +55,7 @@ public class Loginpage extends AppCompatActivity {
         setContentView(R.layout.activity_loginpage);
         container =  findViewById(R.id.lcontainer);
         anim = (AnimationDrawable) container.getBackground();
-        anim.setEnterFadeDuration(6000);
+        anim.setEnterFadeDuration(2000);
         anim.setExitFadeDuration(2000);
 
         username=findViewById(R.id.username1);
